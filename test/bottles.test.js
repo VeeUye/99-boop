@@ -10,6 +10,7 @@ describe('Bottles', () => {
     expect(new Bottles().verse(99)).toBe(expected);
   });
 
+
   test.skip('another verse', () => {
     const expected =
       '3 bottles of beer on the wall, ' +
