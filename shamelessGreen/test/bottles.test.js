@@ -11,7 +11,7 @@ describe('Bottles', () => {
   });
 
 
-  test.skip('another verse', () => {
+  test('another verse', () => {
     const expected =
       '3 bottles of beer on the wall, ' +
       '3 bottles of beer.\n' +
