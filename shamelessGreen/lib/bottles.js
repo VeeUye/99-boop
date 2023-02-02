@@ -1,6 +1,13 @@
 import { downTo } from './helpers';
 
 class Bottles {
+  song() {
+    return this.verses(99, 0);
+  }
+
+  verses(upper, lower) {
+    return downTo(upper, lower).map(num => this.verse(num)).join('\n');
+  }
 
   verse(number) {
     switch (number) {
@@ -35,13 +42,9 @@ class Bottles {
     }
   }
 
-  verses(upper, lower) {
-    return downTo(upper, lower).map(num => this.verse(num)).join('\n');
-  }
 
-  song() {
-    return this.verses(99, 0);
-  }
+
+
 }
 
 export { Bottles };
