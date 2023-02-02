@@ -1,3 +1,5 @@
+import { downTo } from './helpers';
+
 class Bottles {
 
   verse(number) {
@@ -33,8 +35,8 @@ class Bottles {
     }
   }
 
-  verses() {
-    return this.verse(99) + '\n' + this.verse(98);
+  verses(upper, lower) {
+    return downTo(upper, lower).map(num => this.verse(num)).join('\n');
   }
 }
 
