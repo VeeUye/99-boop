@@ -32,6 +32,10 @@ class Bottles {
         );
     }
   }
+
+  verses() {
+    return this.verse(99) + '\n' + this.verse(98);
+  }
 }
 
 export { Bottles };
