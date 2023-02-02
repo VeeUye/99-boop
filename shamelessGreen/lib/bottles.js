@@ -38,6 +38,10 @@ class Bottles {
   verses(upper, lower) {
     return downTo(upper, lower).map(num => this.verse(num)).join('\n');
   }
+
+  song() {
+    return this.verses(99, 0);
+  }
 }
 
 export { Bottles };
